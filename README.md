@@ -3,7 +3,7 @@
 ```mermaid
 ---
 config:
-  theme: dark
+  theme: redux-color
 ---
 
 
