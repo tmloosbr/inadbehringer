@@ -3,8 +3,7 @@
 ```mermaid
 ---
 config:
-  theme: redux-color
-  look: classic
+  theme: neo
 ---
 
 
