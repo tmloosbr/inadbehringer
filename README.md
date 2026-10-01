@@ -3,7 +3,7 @@
 ```mermaid
 ---
 config:
-  theme: neo
+  theme: redux
 ---
 
 
