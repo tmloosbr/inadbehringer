@@ -1,6 +1,13 @@
 # inadbehringer
 
 ```mermaid
+---
+config:
+  theme: forest
+  look: classic
+---
+
+
 swimlane-beta TB
   subgraph INAD
     OrderLinesEntered([Order lines entered])
