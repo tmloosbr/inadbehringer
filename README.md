@@ -3,7 +3,7 @@
 ```mermaid
 ---
 config:
-  theme: forest
+  theme: redux-color
   look: classic
 ---
 
