@@ -1,6 +1,12 @@
 # inadbehringer
 
 ```mermaid
+---
+config:
+  theme: redux-color
+  look: neo
+---
+
 swimlane-beta TB
   subgraph INAD
     Browse[Browse catalogue]
