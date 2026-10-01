@@ -1,16 +1,14 @@
 # inadbehringer
 
 ```mermaid
----
-config:
-  theme: redux-color
-  look: neo
----
-
 swimlane-beta TB
   subgraph INAD
-    Browse[Browse catalogue]
-    Pay[Pay]
+    OrderLinesEntered([Order lines entered])
+    TriggerType{Trigger type}
+Released{Released?}
+OrderReadyForBehringer[Order Ready For Behringer]
+LaunchBehringerProgram[Launch Behringer program]
+Stop([Stop])
   end
   subgraph Geurt Janssen
     Pick[Pick items]
@@ -19,9 +17,10 @@ swimlane-beta TB
   subgraph Behringer
     Invoice[Raise invoice]
   end
-  Browse --> Pay
-  Pay --> Pick
-  Pick --> Ship
-  Pay --> Invoice
+OrderLinesEntered --> TriggerType
+TriggerType --> |Automatic trigger| Released
+TriggerType --> |Manual tigger button or shortcut| OrderReadyForBehringer
+Released --> |Not yet released| Stop 
+OrderReadyForBehringer --> LaunchBehringerProgram
 
 ```
